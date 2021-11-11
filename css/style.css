@@ -1,0 +1,14 @@
+body,
+button,
+input,
+textarea {
+  color: black;
+  font-family: "Asap", sans-serif;
+  font-size: 16px;
+  line-height: 1.8;
+}
+body {
+  background-color: #ededed;
+  margin: 0;
+  font-family: "Asap", sans-serif;
+}
