@@ -1,3 +1,6 @@
+/*--------------------------------------------------------------
+Base styles
+--------------------------------------------------------------*/
 body,
 button,
 input,
@@ -5,53 +8,67 @@ textarea {
   color: black;
   font-family: "Asap", sans-serif;
   font-size: 16px;
-  line-height: 1.8;
+  line-height: 1.5;
 }
+
 body {
   background-color: #ededed;
   margin: 0;
   font-family: "Asap", sans-serif;
 }
+
 img {
   display: block;
   width: 100%;
-  height: auto;
 }
+
 header,
 footer {
   background-color: black;
   height: 100px;
 }
+
 .sidebar-right {
   background-color: blue;
   color: white;
 }
+
 h1 {
   color: red;
   margin: 0;
 }
+
 p {
   margin: 0;
 }
+
 @media screen and (min-width: 1120px) {
   .content-area {
     display: flex;
   }
+
   .sidebar-right {
     flex: 0 0 320px;
   }
 }
+
+/*--------------------------------------------------------------
+Start Header styles
+--------------------------------------------------------------*/
+
 .site-header {
-  height: 400px;
+  height: 400px; /* R */
   display: flex;
   flex-flow: column;
 }
+
 .site-info {
   flex-grow: 1;
   display: flex;
   flex-flow: column;
   justify-content: center;
 }
+
 .site-title {
   margin: 0;
   font-size: 2em;
@@ -60,6 +77,7 @@ p {
   color: white;
   text-transform: uppercase;
 }
+
 .site-description {
   text-align: center;
   color: #f6d200;
@@ -67,10 +85,11 @@ p {
   margin-top: -0.8em;
   font-style: italic;
 }
+
 .main-menu {
   padding: 1em 1em;
   color: black;
-  background-color: #f6d200;
+  background: #f6d200;
 }
 
 @media screen and (min-width: 1120px) {
@@ -79,24 +98,95 @@ p {
   }
 }
 
+/*--------------------------------------------------------------
+End Header styles
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+	START THE POSTS STYLES
+--------------------------------------------------------------*/
+
 .main-content-area {
   padding: 2em;
 }
+
 .post {
   background-color: white;
   margin-bottom: 1em;
 }
+
 .post a {
   color: black;
   text-decoration: none;
 }
+
 .post-content {
   padding: 0 40px 20px;
 }
+
 .post-content h2 {
   background-color: #f6d200;
   color: black;
   padding: 20px;
   text-align: center;
   margin: 0 -40px 30px;
+}
+
+@media screen and (min-width: 810px) {
+  .posts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .post {
+    flex-basis: 49%;
+  }
+}
+
+@media screen and (min-width: 1120px) {
+  .post-one-third {
+    flex-basis: 32%;
+  }
+
+  .post-half {
+    flex-basis: 49%;
+  }
+
+  .post-full {
+    flex-basis: 100%;
+  }
+}
+
+.section-header {
+  color: black;
+  font-size: 3em;
+  text-align: center;
+}
+.watch-card {
+  margin-bottom: 1em;
+}
+.watch-content {
+  background-color: black;
+  color: white;
+  padding: 3em;
+}
+.watch-content h2 {
+  font-size: 2em;
+  font-weight: 300;
+  margin: 0;
+  text-transform: capitalize;
+}
+.movie-info {
+  font-weight: bold;
+}
+.movie-info span {
+  padding-right: 1.5em;
+}
+.movie-story {
+  margin: 1em 0;
+}
+.watch-content a {
+  color: white;
+  font-weight: bold;
 }
