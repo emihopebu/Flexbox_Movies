@@ -282,16 +282,11 @@ start Section download styles
   margin-bottom: -0.25em;
 }
 
-.download-rating .rate {
-  font-size: 2.5em;
-  font-weight: bold;
-  margin-bottom: -0.25em;
-}
-
 .download-content {
   display: flex;
   flex-flow: column;
 }
+
 .download-content a,
 .download-rating {
   display: flex;
@@ -299,28 +294,79 @@ start Section download styles
   justify-content: center;
   text-align: center;
 }
+
 .download-genre,
 .download-cast {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
 }
+
 .download-info h4 {
   flex-basis: 20%;
 }
+
 .download-genre {
   margin-bottom: 10px;
 }
+
 @media screen and (min-width: 810px) {
   .download-content {
     display: flex;
     flex-flow: row;
   }
+
   .download-content a,
   .download-rating {
     flex-grow: 1;
   }
+
   .download-info {
     flex-grow: 2;
   }
 }
+
+/*--------------------------------------------------------------
+end Section download styles
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+start Section gallery styles
+--------------------------------------------------------------*/
+
+.gallery-imgs {
+  margin-left: -8px;
+}
+
+.gallery-imgs {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.gallery-img {
+  height: 250px;
+  flex-grow: 1;
+  margin: 0 0 8px 8px;
+}
+
+.gallery-img:nth-child(4n + 1) {
+  flex-basis: 250px;
+}
+.gallery-img:nth-child(4n + 2) {
+  flex-basis: 325px;
+}
+.gallery-img:nth-child(4n + 3) {
+  flex-basis: 180px;
+}
+.gallery-img:nth-child(4n + 4) {
+  flex-basis: 380px;
+}
+
+.gallery-img img {
+  height: 100%;
+  object-fit: cover;
+}
+
+/*--------------------------------------------------------------
+end Section gallery styles
+--------------------------------------------------------------*/
